@@ -61,6 +61,6 @@ const agentSchema = new mongoose.Schema({
   },
 });
 
-const Agent = mongoose.model(Agent, agentSchema);
+const Agent = mongoose.model("Agent", agentSchema);
 
 export default Agent;

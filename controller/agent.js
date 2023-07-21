@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 import asyncHandler from "express-async-handler";
-import Agent from "../model/agent";
+import Agent from "../model/agent.js";
 
 const addAgent = asyncHandler(async (req, res) => {
   const {
