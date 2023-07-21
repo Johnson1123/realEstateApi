@@ -5,6 +5,7 @@ import connectDB from "./config/db.js";
 import * as dotenv from "dotenv";
 import cors from "cors";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
+import agentRoutes from "./route/agent.js";
 
 dotenv.config();
 
