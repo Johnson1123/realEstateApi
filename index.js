@@ -15,11 +15,11 @@ app.use(
     credentials: true,
   })
 );
-app.get("/", (req, res) => {
-  res.send("Sever ready");
-});
-app.use("/api", agentRoutes);
 
+app.use("/api", agentRoutes);
+app.get("/", (req, res) => {
+  res.send({ name: "johnson", age: 23 });
+});
 connectDB();
 
 app.use(notFound);

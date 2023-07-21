@@ -61,6 +61,7 @@ const agentSchema = new mongoose.Schema({
   },
 });
 
+// agentSchema.methods.comparedPassword();
 const Agent = mongoose.model("Agent", agentSchema);
 
 export default Agent;
